@@ -30,12 +30,11 @@ img {
     background-color: #6a8518;
     width: 720px;
     height: 405px;
-    position: fixed;
+    position: relative;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     z-index: -1;
-    position: relative;
 }
 
 
