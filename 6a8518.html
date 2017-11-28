@@ -1,0 +1,78 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GG by 6a8518</title>
+        <link rel="stylesheet" href="onepage.css">
+         <link href="https://fonts.googleapis.com/css?family=Knewave|Pacifico|Permanent+Marker|Press+Start+2P|Shrikhand" rel="stylesheet"> 
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="icon" sizes="32x32" href="/favicon(32x32).png">
+    </head>
+    
+      
+      
+    <body>
+    
+         <section class="logo">
+             <img src="/img/logo(withGG).png" alt="6a8518 x GG">
+         </section>
+
+         <section id="nav">
+             <a href="https://brunch.co.kr/@jjhktf" id="b_link" title="">brunch</a>
+    <!--         <a href="" id="f_link" title="facebook">facebook</a>-->
+<!--             <a href="https://www.youtube.com/channel/UCf582RpnA6pkxsxNlI2u-oQ" id="y_link">youtube</a>-->
+             <a href="https://www.instagram.com/6a8518/" id="i_link" title="">instagram</a>
+         </section>
+
+         <section id="background_img"></section>
+         
+         <div id="content_box"></div>
+
+         
+
+<!--         <section class="content_box"><iframe class="content_box" src="https://www.youtube.com/embed/urh_fOARWH0?autoplay=1&version=3&loop=1&playlist=urh_fOARWH0&showinfo=0&controls=0&fs=0&autohide=1&modestbranding=1&rel=0" frameborder="0"></iframe></section>-->
+
+<!--    youtube looping >> version=3&loop=1&playlist=urh_fOARWH0&-->
+<!--    <div class="video-container"><iframe></iframe></div>-->
+    
+     
+    </body>
+    
+    <script>
+    
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('content_box', {
+          height: "100%",
+          width: "100%",
+          videoId: 'urh_fOARWH0',
+          playerVars: {
+        autoplay: 1, // Auto-play the video on load
+        controls: 0, // Show pause/play buttons in player
+        showinfo: 0, // Hide the video title
+        modestbranding: 0, // Hide the Youtube Logo
+        loop: 1, // Run the video in a loop
+        playlist: 'urh_fOARWH0',
+        rel: 0,
+        fs: 0, // Hide the full screen button
+        cc_load_policty: 0, // Hide closed captions
+        iv_load_policy: 3, // Hide the Video Annotations
+        autohide: 0 // Hide video controls when playing
+        },
+        events: {
+        onReady: function(e) {
+        e.target.mute();
+        }
+        }
+        });
+        }
+       
+    </script>
+</html>
