@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ebeceb;
+    width: 100%;
+    height: calc(100vh);
+}
+
+#background_img {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 95.5vh;
+    width: 96vw;
+    background-image: url(img/background.png);
+    background-repeat: repeat;
+    background-size: 2.7em;
+    z-index: -2;
+}
+
+img {
+    height: 4.5em;
+    width: auto;
+    margin-left: 2.4vw;
+    margin-top: 3vh;
+}
+
+#content_box {
+    background-color: #6a8518;
+    width: 720px;
+    height: 405px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: 'Knewave', cursive;
+    color: #6a8518;
+    font-size: 2.5em;
+    
+}
+
+
+
+#i_link {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 24.5%;
+    left: 50%;
+}
+
+#b_link {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 74%;
+    left: 50%;
+}
+
+/*
+#y_link {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 94%;
+    left: 50%;
+}
+*/
+
+/*
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+    background-color: #6a8518;
+    max-width:640px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+*/
+
+@media (max-width: 750px) {
+    
+    #content_box {
+        width: 96vw;
+        height: 54vw;
+    }
+    
+    a {
+        font-size: 1.7em;
+    }
+    
+    img {
+        width:50%;
+        height: auto;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 15%;
+        left: 50%;
+    }
+    
+    #i_link {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 34%;
+        left: 50%;
+}
+
+    #b_link {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 64.5%;
+        left: 50%;
+}
+}
+
+@media (max-height: 414px) {
+    
+    img {
+        display: none;
+    }
+    
+    #i_link {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 12%;
+        left: 50%;
+}
+
+    #b_link {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 88%;
+        left: 50%;
+}
+}
