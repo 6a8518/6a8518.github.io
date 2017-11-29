@@ -116,7 +116,8 @@ li:first-child {
 }
 */
 
-@media only screen and (max-width: 768px) {
+@media only screen 
+and (max-width: 1024px) {
     
     #content_box {
         width: 96vw;
@@ -167,7 +168,7 @@ line-height: 1;
         margin-left: 13px;
         margin-right: 10px;
     }
-    
+}
 
 /*
     #i_link {
@@ -186,14 +187,50 @@ line-height: 1;
 }
 */
 
-@media only screen and (max-height: 414px) {
+@media only screen
+and (max-height: 600px)
+and (orientation: landscape) {
     
     img {
         display: none;
     }
     
     ul {
-        z-index: 2;
+        display: inline;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 79%;
+        left: 50%;
+        padding: 0;
+        margin: 52px 0 0 0;
+        text-align: center;
+line-height: 1;
+    }
+    
+    li {
+      float: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li:first-child {
+        padding-right: 0;
+    }
+    
+    #content_box {
+        width: 480px;
+        height: 270px;
+    }
+    
+    #i_link, #b_link {
+        font-size: 1em;
+    } 
+    
+    #dash {
+        font-size: 0.7em;
+        margin-left: 13px;
+        margin-right: 10px;
+    
     }
     
 /*
@@ -211,3 +248,52 @@ line-height: 1;
         left: 50%;
 }
 }*/
+
+/*
+@media only screen
+and (width: 1024px)
+and (height: 768px)
+and (orientation: landscape) {
+    
+    img {
+        display: none;
+    }
+    
+    ul {
+        display: inline;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 79%;
+        left: 50%;
+        padding: 0;
+        margin: 52px 0 0 0;
+        text-align: center;
+line-height: 1;
+    }
+    
+    li {
+      float: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li:first-child {
+        padding-right: 0;
+    }
+    
+    #content_box {
+        width: 480px;
+        height: 270px;
+    }
+    
+    #i_link, #b_link {
+        font-size: 1em;
+    } 
+    
+    #dash {
+        font-size: 0.7em;
+        margin-left: 13px;
+        margin-right: 10px;
+    
+    }
+*/
