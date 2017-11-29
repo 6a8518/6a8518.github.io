@@ -34,7 +34,7 @@ img {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    z-index: -1;
+/*    z-index: -1;*/
 }
 
 
@@ -47,7 +47,31 @@ a {
 }
 
 
+ul {
+    overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+    margin-bottom: 9vh;
+}
 
+li {
+    float: right;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    line-height: 1;
+}
+
+li:first-child {
+    padding-right: 3.5%;
+}
+
+#dash {
+    font-family: 'Roboto';
+    font-size: 3em;
+}
+/*
 #i_link {
     position: fixed;
     transform: translate(-50%, -50%);
@@ -61,6 +85,7 @@ a {
     top: 74%;
     left: 50%;
 }
+*/
 
 /*
 #y_link {
@@ -91,16 +116,13 @@ a {
 }
 */
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     
     #content_box {
         width: 96vw;
         height: 54vw;
     }
     
-    a {
-        font-size: 1.7em;
-    }
     
     img {
         width:50%;
@@ -111,6 +133,43 @@ a {
         left: 50%;
     }
     
+
+    
+    ul {
+        display: inline;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 79%;
+        left: 50%;
+        padding: 0;
+        margin: 50px 0 0 0;
+        text-align: center;
+line-height: 1;
+    }
+    
+    li {
+      float: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    li:first-child {
+        padding-right: 0;
+    }
+    
+    #i_link, #b_link {
+        font-size: 1.4em;
+    } 
+    
+    #dash {
+        font-size: 1em;
+        margin-left: 13px;
+        margin-right: 10px;
+    }
+    
+
+/*
     #i_link {
         position: fixed;
         transform: translate(-50%, -50%);
@@ -123,8 +182,9 @@ a {
         transform: translate(-50%, -50%);
         top: 64.5%;
         left: 50%;
+
 }
-}
+*/
 
 @media (max-height: 414px) {
     
@@ -132,6 +192,11 @@ a {
         display: none;
     }
     
+    ul {
+        z-index: 2;
+    }
+    
+/*
     #i_link {
         position: fixed;
         transform: translate(-50%, -50%);
@@ -145,4 +210,4 @@ a {
         top: 88%;
         left: 50%;
 }
-}
+}*/
