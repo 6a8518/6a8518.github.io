@@ -116,7 +116,7 @@ li:first-child {
 }
 */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     
     #content_box {
         width: 96vw;
@@ -186,7 +186,7 @@ line-height: 1;
 }
 */
 
-@media (max-height: 414px) {
+@media only screen and (max-height: 414px) {
     
     img {
         display: none;
